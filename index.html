@@ -14,12 +14,56 @@
         #hplogo{
             text-align: center;
         }
-        footer{
+        .footer{
             background-color: lightgrey;
+            bottom: 0px;
+            position: fixed;
+            width: 100%;
         }
-        footer hr{
+        .footer hr{
             width: 1px;
         }
+        .entrada{
+            background-color: transparent;
+            border: none;
+            margin: 0%;
+            color: rgba(0,0, 0, .87);
+            word-wrap: break-word;
+            display: flex;
+            flex: 100%;
+            -webkit-tap-highlight-color: transparent;
+            margin-top: -37px;
+
+        }
+        .caracteres{
+            font: 16px arial,sans-serif;
+            line-height: 34px;
+            height: 34px !important;
+        }
+        input{
+            -webkit-writing-mode: horizontal-tb !important;
+            text-rendering: auto;
+            color: initial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            -webkit-appearance: textfield;
+            background-color: white;
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+        }
+        .button{
+            height: 39px;
+        }
+        .footer {
+              background-color: lightgrey;
+              bottom: 0px;
+              
+}
     </style>
 </head>
 <body>
@@ -32,15 +76,17 @@
         <img alt="Google" height="92" id="hplogo" src="/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" srcset="/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" style="padding-top:109px" width="272" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" data-atf="1" data-iml="1562113438414">
 
         <form action="">
-            <input type="text" name="find" id="find">
+            <div class="entrada">
+                <input type="text" name="find" id="find" class="entrada caracteres">
+            </div>
             <div class="button">
                 <button type="submit">Buscar con Google</button>
             </div>
             <div class="button">Me siento con suerte</div>
         </form>
-        <footer>
+        <div class="footer">
             Colombia
             <hr>
-        </footer>
+        </div>
 </body>
 </html>
